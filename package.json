@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-ucc-liens",
+  "version": "0.1.0",
+  "description": "UCC Liens — business-debtor UCC (Uniform Commercial Code) financing",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-ucc-liens": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ucc-liens"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-ucc-liens.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-b84d0de08f0749d16a817c6014ab1b5d3e5fd5416355cc41f2395285f4429f6a",
+    "sourceCommit": "3d8d9f09e39ebb175a9e41fffd8601eeddcf10a4"
+  }
+}
