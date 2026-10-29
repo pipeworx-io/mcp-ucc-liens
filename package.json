@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ucc-liens",
-  "version": "0.1.0",
-  "description": "UCC Liens — business-debtor UCC (Uniform Commercial Code) financing",
+  "version": "0.2.0",
+  "description": "UCC Liens — business-debtor UCC (Uniform Commercial Code) financing statements for Colorado, Connecticut and Oregon, sourced from each state's own public open-data portal (Socrata).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ucc-liens": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ucc-liens"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ucc-liens.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ucc-liens",
   "pipeworx": {
-    "sourceHash": "v1-b84d0de08f0749d16a817c6014ab1b5d3e5fd5416355cc41f2395285f4429f6a",
-    "sourceCommit": "3d8d9f09e39ebb175a9e41fffd8601eeddcf10a4"
+    "mode": "gateway",
+    "slug": "ucc-liens",
+    "gatewaySlug": "ucc-liens",
+    "sourceHash": "v1-406a3eccc5e34edd95275ffac2f3a6d8e3c018f733d4795fc7cfa7125a460914",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
