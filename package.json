@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ucc-liens",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "UCC Liens — business-debtor UCC (Uniform Commercial Code) financing statements for Colorado, Connecticut and Oregon, sourced from each state's own public open-data portal (Socrata).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ucc-liens",
     "gatewaySlug": "ucc-liens",
-    "sourceHash": "v1-406a3eccc5e34edd95275ffac2f3a6d8e3c018f733d4795fc7cfa7125a460914",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-866bf091c0c770852206d71ca4927ec1dcc2a5a5b7be06c5a5086f1fd1328ea8",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
